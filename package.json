@@ -1,0 +1,16 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "A command line based application that allows a user to track and add employee data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Mellus",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.1.2",
+    "mysql2": "^2.3.0"
+  }
+}
