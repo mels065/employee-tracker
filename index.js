@@ -1,11 +1,11 @@
-const mysql2 = require('mysql2');
+const mysql2 = require('mysql2/promise');
 
 require('dotenv').config();
 
-const SQL = require('./sql');
+const SQL = require('./lib/sql');
 
 async function init() {
-    const db = mysql2.createConnection({
+    const db = await mysql2.createConnection({
             database: process.env.DB_NAME,
             user: process.env.MYSQL_USER,
             password: process.env.MYSQL_PW
