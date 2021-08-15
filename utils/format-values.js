@@ -1,1 +1,3 @@
-module.exports = (vals) => vals.map(val => `"${String(val)}"`).join(', ');
+const stringifyVal = require("./stringify-val");
+
+module.exports = vals => vals.map(stringifyVal).join(', ');
