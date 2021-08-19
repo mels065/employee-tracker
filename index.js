@@ -1,5 +1,6 @@
 const mysql2 = require('mysql2/promise');
 
+require('console.table');
 require('dotenv').config();
 
 const SQL = require('./lib/sql');
